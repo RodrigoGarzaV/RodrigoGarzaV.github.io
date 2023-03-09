@@ -1,0 +1,23 @@
+<h3>Nivel Educativo</h3>
+    <ul *ngFor="let work of educationExperience">
+        <li>
+            <tr>
+                <td>Rango de fechas: {{ work.fecha }}</td>
+                <td>Ubicación: {{ work.ubicacion }}</td>
+            </tr>
+            <tr>
+                <td>Nivel: {{ work.nivel }}</td>
+            </tr>
+            <tr>
+                <td>Escuela: {{ work.escuela }}</td>
+            </tr>
+
+            <h4> Logros: </h4>
+            <ul *ngFor="let logro of work.logros">
+                <li>
+                    <tr>{{ logro.descripcion }}</tr>
+                </li>
+            </ul>
+            
+        </li>
+    </ul>
